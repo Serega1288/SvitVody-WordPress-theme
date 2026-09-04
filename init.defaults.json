@@ -14,5 +14,5 @@
   "packageDescription": "Root build tooling for a reusable WordPress starter theme running in Docker.",
   "wordpressPort": "8080",
   "adminerPort": "8081",
-  "autoPlugins": "cyr2lat,debug-log-viewer,disable-gutenberg,disable-comments,all-in-one-wp-migration,woocommerce"
+  "autoPlugins": "cyr2lat,debug-log-viewer,disable-gutenberg,disable-comments,all-in-one-wp-migration"
 }
