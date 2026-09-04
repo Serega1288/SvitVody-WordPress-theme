@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Про воду — SvitVody</title>
+    <link rel="icon" href="assets/favicon/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/css/tailwind.css">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/swiper-bundle.min.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+</head>
+<body  class="antialiased page-about-water">
+<!-- Header -->
+    <header id="main-header" class="sticky top-0 z-[100] w-full px-6 py-4 md:px-16 bg-white border-b border-brand-line transition-all duration-300">
+        <div class="site-header-inner w-full mx-auto flex items-center justify-between">
+        <div class="flex items-center gap-12">
+            <a href="index.html" class="site-logo-link group transition-all" aria-label="Світ Води, головна"><img class="site-logo site-logo-header" src="assets/img/svit-vody-logo-blue.svg" alt="Світ Води - доставка здоров'я"></a>
+            <nav class="hidden lg:flex items-center gap-8 text-[13px] font-bold uppercase tracking-wider">
+                <a href="index.html" class="nav-link text-gray-500 hover:text-brand-blue transition-colors">Головна</a>
+                <a href="about-water.html" class="nav-link active text-brand-blue border-b-2 border-brand-blue pb-1">Про воду</a>
+                <a href="water-for-home.html" class="nav-link text-gray-500 hover:text-brand-blue transition-colors">Для дому</a>
+                <a href="water-for-office.html" class="nav-link text-gray-500 hover:text-brand-blue transition-colors">Для офісу</a>
+                <a href="index.html#pricing" class="nav-link text-gray-500 hover:text-brand-blue transition-colors">Вартість</a>
+            </nav>
+        </div>
+
+        <div class="flex items-center gap-4">
+            <div class="relative group">
+                <button class="flex items-center gap-3 px-6 py-3 bg-brand-darkblue text-brand-blue rounded-xl text-sm font-bold border border-brand-line hover:border-brand-blue transition-all">
+                    <i class="fa-solid fa-phone-volume text-brand-orange text-lg"></i>
+                    Контакти
+                    <i class="fa-solid fa-chevron-down text-[10px] opacity-50 ml-1"></i>
+                </button>
+                <div class="absolute right-0 top-full mt-2 w-72 bg-white border border-brand-line shadow-2xl rounded-2xl p-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-50">
+                    <div class="space-y-4">
+                        <div>
+                            <p class="text-[10px] uppercase tracking-widest text-gray-400 font-bold mb-2">Наші телефони</p>
+                            <a href="tel:+380671234567" class="block text-brand-blue text-lg font-bold hover:text-brand-orange transition-colors">+380 (67) 123 45 67</a>
+                        </div>
+                        <div class="pt-4 border-t border-brand-line">
+                            <p class="text-[10px] uppercase tracking-widest text-gray-400 font-bold mb-1">Графік роботи</p>
+                            <p class="text-xs text-brand-blue font-medium">Пн-Пт: 08:00 - 20:00</p>
+                            <p class="text-xs text-brand-blue font-medium">Сб-Нд: 09:00 - 18:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button data-modal-open="orderModal" class="px-8 py-3 bg-brand-orange text-white rounded-xl text-sm font-bold shadow-lg shadow-brand-orange/30 hover:bg-orange-600 transition-all hover:scale-105 active:scale-95">
+                Замовити воду
+            </button>
+            <div class="flex items-center gap-1 p-1 bg-brand-darkblue border border-brand-line rounded-xl text-[11px] font-bold">
+                <button class="px-3 py-1.5 rounded-lg bg-white text-brand-blue shadow-sm">UA</button>
+                <button class="px-3 py-1.5 rounded-lg text-gray-400 hover:text-brand-blue transition-colors">RU</button>
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <!-- Page Header (About Water theme) -->
+    <section class="inner-hero reveal bg-brand-lightblue py-24 px-6 md:px-16 overflow-hidden relative min-h-[500px] flex items-center">
+        <div class="absolute inset-0 z-0">
+            <img class="w-full h-full object-cover opacity-20" src="assets/img/gen-5db4a6d8f0-8c178c9ad56ca649-13218520.png" alt="underwater view with sunlight rays passing through clean blue water, bubbles, macro photography, ref" />
+        </div>
+        <div class="max-w-screen-xl mx-auto flex flex-col md:flex-row items-center gap-16 relative z-10">
+            <div class="flex-1 text-center md:text-left">
+                <div class="inline-flex items-center gap-2 px-3 py-1 bg-white/50 backdrop-blur-sm rounded-full border border-brand-line mb-6">
+                    <span class="w-2 h-2 bg-brand-orange rounded-full"></span>
+                    <span class="text-[10px] font-bold uppercase tracking-wider text-brand-blue">Сила природи</span>
+                </div>
+                <h1 class="text-5xl md:text-7xl font-black text-brand-blue mb-8 leading-[1.1]">Про нашу <br> воду</h1>
+                <p class="text-lg text-brand-blue/60 leading-relaxed max-w-lg mb-10">
+                    Дізнайтеся більше про якість, склад та етапи підготовки води, яку ви п'єте щодня. Ми піклуємося про кожну краплю.
+                </p>
+                <div class="about-water-stats">
+                    <div>
+                        <span>9</span>
+                        <strong>ступенів очистки</strong>
+                    </div>
+                    <div>
+                        <span>100%</span>
+                        <strong>природне походження</strong>
+                    </div>
+                </div>
+                <button data-modal-open="orderModal" class="about-water-cta">Почати доставку</button>
+            </div>
+            <div class="flex-1 relative flex justify-center">
+                <div class="relative w-full max-w-lg">
+                    <img class="banner-bottle-hover w-full h-auto drop-shadow-3xl" src="assets/img/bytel-s-kaplyami-1-f6f112f0.png" alt="Water Bottle" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Block 1: Наша вода (From Screenshot 1) -->
+    <section class="water-quality reveal py-24 px-6 md:px-16 bg-white relative">
+        <div class="max-w-screen-xl mx-auto relative z-10">
+            <h2 class="text-3xl md:text-4xl font-black text-center mb-24 text-brand-blue uppercase tracking-tight">НАША ВОДА</h2>
+            
+            <div class="grid md:grid-cols-3 gap-y-20 gap-x-12">
+                <!-- Norms -->
+                <div class="flex flex-col items-center text-center group">
+                    <div class="mb-8">
+                        <i class="fa-solid fa-file-contract text-4xl text-brand-blue group-hover:scale-110 transition-transform"></i>
+                    </div>
+                    <h3 class="text-sm font-bold text-brand-blue mb-6 uppercase tracking-wider leading-tight h-10 flex items-center justify-center">ВИРОБЛЯЄТЬСЯ ЗГІДНО ВСІХ НОРМ</h3>
+                    <p class="text-[12px] text-brand-blue/60 leading-relaxed px-4">Наша вода виробляється з урахуванням усіх стандартів санітарно-епідеміологічної служби України та відповідно до вимог "ДСанПіН 2.2.4-171-10" та стандарту ГОСТ 287482 "Вода питна. Гігієнічні вимоги та контроль за якістю", що дозволяє нам дотримуватись усіх критеріїв якості та безпеки води, розфасованої у ємності.</p>
+                </div>
+
+                <!-- Minenals -->
+                <div class="flex flex-col items-center text-center group">
+                    <div class="mb-8">
+                        <i class="fa-solid fa-gem text-4xl text-brand-blue group-hover:scale-110 transition-transform"></i>
+                    </div>
+                    <h3 class="text-sm font-bold text-brand-blue mb-6 uppercase tracking-wider leading-tight h-10 flex items-center justify-center">ЗБАГАЧЕНА КОРИСНИМИ ФТОРОМ І МАГНІЄМ</h3>
+                    <p class="text-[12px] text-brand-blue/60 leading-relaxed px-4">Мінералізація води визначається співвідношенням води та корисних речовин (кальцій, магній, фтор, йод, різноманітні солі тощо). Наша вода готується за принципом «золота середина», адже відхилення від норм може призвести до порушення водно-сольового балансу організму. Особливо важливі та корисні елементи – фтор та магній.</p>
+                </div>
+
+                <!-- 9 Steps -->
+                <div class="flex flex-col items-center text-center group">
+                    <div class="mb-8">
+                        <i class="fa-solid fa-water text-4xl text-brand-blue group-hover:scale-110 transition-transform"></i>
+                    </div>
+                    <h3 class="text-sm font-bold text-brand-blue mb-6 uppercase tracking-wider leading-tight h-10 flex items-center justify-center">9 СТУПЕНІВ ОЧИЩЕННЯ</h3>
+                    <p class="text-[12px] text-brand-blue/60 leading-relaxed px-4">Наша вода проходить 9 ступенів обробки – від механічного очищення, коли видаляються всі домішки та хлор, до мембранної, при необхідності коригується показник pH, далі знезараження ультрафіолетом та насичення мінералами.</p>
+                </div>
+
+                <!-- Disinfection -->
+                <div class="flex flex-col items-center text-center group">
+                    <div class="mb-8">
+                        <i class="fa-solid fa-flask text-4xl text-brand-blue group-hover:scale-110 transition-transform"></i>
+                    </div>
+                    <h3 class="text-sm font-bold text-brand-blue mb-6 uppercase tracking-wider leading-tight h-10 flex items-center justify-center">ДЕЗИНФЕКЦІЯ БУТИЛІВ</h3>
+                    <p class="text-[12px] text-brand-blue/60 leading-relaxed px-4">Вода постачається в полікарбонатних бутилях, які не змінюють властивості води та дають можливість її довготривалого збереження. Технологічні можливості дозволяють ретельно стерилізувати обмінну тару перед повторним використанням.</p>
+                </div>
+
+                <!-- Free Delivery -->
+                <div class="flex flex-col items-center text-center group">
+                    <div class="mb-8">
+                        <i class="fa-solid fa-truck-fast text-4xl text-brand-blue group-hover:scale-110 transition-transform"></i>
+                    </div>
+                    <h3 class="text-sm font-bold text-brand-blue mb-6 uppercase tracking-wider leading-tight h-10 flex items-center justify-center">ДОСТАВЛЯЄМО БЕЗКОШТОВНО!</h3>
+                    <p class="text-[12px] text-brand-blue/60 leading-relaxed px-4">За Вашим замовленням безкоштовно доставимо нашу чисту, якісну та смачну воду за доступною ціною! Розливаємо перед доставкою, привеземо у чітко зазначений час. Можлива доставка води “день в день”, якщо замовлення було оформлене у будній день до 10 ранку.</p>
+                </div>
+
+                <!-- Universal -->
+                <div class="flex flex-col items-center text-center group">
+                    <div class="mb-8">
+                        <i class="fa-solid fa-house-laptop text-4xl text-brand-blue group-hover:scale-110 transition-transform"></i>
+                    </div>
+                    <h3 class="text-sm font-bold text-brand-blue mb-6 uppercase tracking-wider leading-tight h-10 flex items-center justify-center">ВОДА ДЛЯ ДОМУ ТА ОФІСУ</h3>
+                    <p class="text-[12px] text-brand-blue/60 leading-relaxed px-4">Можемо доставити воду до будь-якої організації, офісу чи житлового будинку, до будь-якого району міста в найкоротші терміни. Кришки до бутелів універсальні, так що нашу воду можна буде легко встановити в кулер або поставити механічну помпу.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Block 2: Склад води (From Screenshot 2) -->
+    <section class="water-composition reveal py-24 px-6 md:px-16 blue-gradient-bg text-white overflow-hidden">
+        <div class="absolute inset-0 water-texture opacity-20"></div>
+        <div class="absolute inset-0 molecule-pattern opacity-10"></div>
+        
+        <div class="max-w-screen-xl mx-auto relative z-10">
+            <h2 class="text-3xl md:text-4xl font-black text-center mb-24 uppercase tracking-widest">Склад води</h2>
+            
+            <!-- Top 3 Large Circles -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-20 max-w-5xl mx-auto">
+                <div class="flex flex-col items-center text-center group">
+                    <div class="w-48 h-48 composition-circle rounded-full flex flex-col items-center justify-center mb-6">
+                        <span class="text-[10px] font-bold uppercase tracking-widest mb-2 px-4 leading-tight">ЗАГАЛЬНА ЖОРСТКІСТЬ</span>
+                        <div class="text-xl italic font-medium">0,02-1,5</div>
+                        <div class="text-[10px] uppercase font-bold tracking-widest mt-1">mol — dm³</div>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center text-center group">
+                    <div class="w-48 h-48 composition-circle rounded-full flex flex-col items-center justify-center mb-6">
+                        <span class="text-[10px] font-bold uppercase tracking-widest mb-2 px-4 leading-tight">ЗАГАЛЬНА ЛУЖНІСТЬ</span>
+                        <div class="text-xl italic font-medium">0,12-2,50</div>
+                        <div class="text-[10px] uppercase font-bold tracking-widest mt-1">mol — dm³</div>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center text-center group">
+                    <div class="w-48 h-48 composition-circle rounded-full flex flex-col items-center justify-center mb-6">
+                        <span class="text-[10px] font-bold uppercase tracking-widest mb-2 px-4 leading-tight">СУХИЙ ЗАЛИШОК</span>
+                        <div class="text-xl italic font-medium">100-150</div>
+                        <div class="text-[10px] uppercase font-bold tracking-widest mt-1">mg — dm³</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom 5 Smaller Circles -->
+            <div class="flex flex-wrap justify-center gap-8 mb-24">
+                <div class="flex flex-col items-center text-center group">
+                    <div class="w-36 h-36 composition-circle rounded-full flex flex-col items-center justify-center">
+                        <span class="text-sm font-bold mb-1">K+, Na+</span>
+                        <div class="text-base italic">1,4-25</div>
+                        <div class="text-[8px] uppercase font-bold tracking-widest mt-1">mg — dm³</div>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center text-center group">
+                    <div class="w-36 h-36 composition-circle rounded-full flex flex-col items-center justify-center">
+                        <span class="text-sm font-bold mb-1">Ca</span>
+                        <div class="text-base italic">0,4-10</div>
+                        <div class="text-[8px] uppercase font-bold tracking-widest mt-1">mg — dm³</div>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center text-center group">
+                    <div class="w-36 h-36 composition-circle rounded-full flex flex-col items-center justify-center">
+                        <span class="text-sm font-bold mb-1">Mg</span>
+                        <div class="text-base italic">0,06-35</div>
+                        <div class="text-[8px] uppercase font-bold tracking-widest mt-1">mg — dm³</div>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center text-center group">
+                    <div class="w-36 h-36 composition-circle rounded-full flex flex-col items-center justify-center">
+                        <span class="text-sm font-bold mb-1">F</span>
+                        <div class="text-base italic"><0,08</div>
+                        <div class="text-[8px] uppercase font-bold tracking-widest mt-1">mg — dm³</div>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center text-center group">
+                    <div class="w-36 h-36 composition-circle rounded-full flex flex-col items-center justify-center">
+                        <span class="text-sm font-bold mb-1">Йод</span>
+                        <div class="text-base italic"><0,001</div>
+                        <div class="text-[8px] uppercase font-bold tracking-widest mt-1">mg — dm³</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Paragraph Text -->
+            <div class="max-w-4xl mx-auto text-center px-6">
+                <p class="text-lg md:text-xl font-medium leading-relaxed mb-8">
+                    Це справжня корисна вода, яка підходить для приготування їжі, напоїв, харчового льоду та, звичайно, дитячого харчування. Наша вода має ідеально збалансований мінеральний склад, тому смачна і не має сторонніх запахів. Вона не залишає накипу або осаду, відповідає всім вимогам норм води для питних цілей, тому її сміливо можна вживати у сирому вигляді і дорослим, і дітям. 
+                </p>
+                <div class="text-2xl md:text-3xl font-black uppercase tracking-tighter">Пийте воду, скільки хочеться!</div>
+            </div>
+        </div>
+
+        <!-- Decorative Floating Drops -->
+        <div class="absolute bottom-10 left-10 w-24 h-24 opacity-20 hidden lg:block">
+            <svg viewBox="0 0 100 100" class="w-full h-full"><path d="M50 0 C70 40 90 60 90 80 A40 40 0 0 1 10 80 C10 60 30 40 50 0" fill="white" /></svg>
+        </div>
+        <div class="absolute top-20 right-10 w-32 h-32 opacity-10 hidden lg:block">
+            <svg viewBox="0 0 100 100" class="w-full h-full rotate-45"><path d="M50 0 C70 40 90 60 90 80 A40 40 0 0 1 10 80 C10 60 30 40 50 0" fill="white" /></svg>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="site-footer text-white pt-24 pb-12 px-6 md:px-16">
+        <div class="max-w-screen-2xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16 border-b border-white/10 pb-16">
+                <div class="space-y-6">
+                    <a href="index.html" class="site-logo-link footer-logo-link group transition-all" aria-label="Світ Води, головна"><img class="site-logo site-logo-footer" src="assets/img/svit-vody-logo-white.svg" alt="Світ Води - доставка здоров'я"></a>
+                    <p class="text-white/40 text-sm leading-relaxed max-w-xs">Чиста вода для вашого здоров'я з 2010 року. Свіжість природи у кожній краплі.</p>
+                </div>
+
+                <div>
+                    <h4 class="text-[10px] font-bold uppercase tracking-[0.3em] text-white/20 mb-8">Меню</h4>
+                    <ul class="space-y-4 text-sm font-semibold text-white/60">
+                        <li><a href="index.html" class="hover:text-brand-orange transition-colors">Головна</a></li>
+                        <li><a href="about-water.html" class="hover:text-brand-orange transition-colors">Про воду</a></li>
+                        <li><a href="water-for-home.html" class="hover:text-brand-orange transition-colors">Для дому</a></li>
+                        <li><a href="water-for-office.html" class="hover:text-brand-orange transition-colors">Для офісу</a></li>
+                        <li><a href="index.html#pricing" class="hover:text-brand-orange transition-colors">Вартість</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-[10px] font-bold uppercase tracking-[0.3em] text-white/20 mb-8">Контакти</h4>
+                    <div class="space-y-6">
+                        <div>
+                            <a href="tel:+380671234567" class="block font-bold text-2xl hover:text-brand-orange transition-colors tracking-tighter">+380 (67) 123 45 67</a>
+                            <p class="text-white/30 text-[10px] font-bold uppercase tracking-widest mt-1">Цілодобовий прийом заявок</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-[10px] font-bold uppercase tracking-[0.3em] text-white/20 mb-8">Меседжери</h4>
+                    <div class="grid grid-cols-1 gap-3">
+                        <a href="#" class="flex items-center gap-3 px-5 py-4 bg-white/5 rounded-2xl hover:bg-[#0088cc] transition-all group">
+                            <i class="fa-brands fa-telegram text-xl text-[#0088cc] group-hover:text-white"></i>
+                            <span class="font-bold text-xs uppercase tracking-widest">Telegram</span>
+                        </a>
+                        <a href="#" class="flex items-center gap-3 px-5 py-4 bg-white/5 rounded-2xl hover:bg-[#7360f2] transition-all group">
+                            <i class="fa-brands fa-viber text-xl text-[#7360f2] group-hover:text-white"></i>
+                            <span class="font-bold text-xs uppercase tracking-widest">Viber</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <p class="text-white/10 text-[10px] font-bold uppercase tracking-widest">© 2024 SvitVody. Всі права захищені.</p>
+                <div class="text-white/10 text-[10px] font-bold uppercase tracking-widest italic">Доставка здоров'я</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Order Modal -->
+    <div id="orderModal" data-modal-backdrop="orderModal" class="fixed inset-0 z-[200] hidden items-center justify-center bg-brand-blue/60 backdrop-blur-md p-4">
+        <div class="order-modal-dialog"></div>
+    </div>
+</body>
+</html>
+

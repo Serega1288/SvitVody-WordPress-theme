@@ -1,0 +1,90 @@
+{
+  "source": "C:\\work\\project\\svitvody.com.ua\\uxpilot",
+  "output": "C:\\work\\project\\svitvody.com.ua\\html",
+  "pages": [
+    {
+      "source": "05-SvitVodyRedesign - Home.html",
+      "output": "index.html"
+    },
+    {
+      "source": "01-SvitVodyRedesign - WaterForHom.html",
+      "output": "water-for-home.html"
+    },
+    {
+      "source": "02-SvitVodyRedesign - WaterForOff.html",
+      "output": "water-for-office.html"
+    },
+    {
+      "source": "04-SvitVodyRedesign - AboutWater (1).html",
+      "output": "about-water.html"
+    },
+    {
+      "source": "03-SvitVodyRedesign - PopupContac.html",
+      "output": "order.html"
+    }
+  ],
+  "assets": {
+    "images": [
+      {
+        "url": "https://svitvody.com.ua/wp-content/uploads/2022/08/Bytel-s-kaplyami-1.png",
+        "file": "assets/img/bytel-s-kaplyami-1-f6f112f0.png"
+      },
+      {
+        "url": "https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_cc543833b5_4d439efb00fffb33.png",
+        "file": "assets/img/gen-cc543833b5-4d439efb00fffb33-ab769a12.png"
+      },
+      {
+        "url": "https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_45c4a67b11_e219813d4e4714b3.png",
+        "file": "assets/img/gen-45c4a67b11-e219813d4e4714b3-0ffccf7c.png"
+      },
+      {
+        "url": "https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_17281a40e9_066ed88cf47c2188.png",
+        "file": "assets/img/gen-17281a40e9-066ed88cf47c2188-f5d8bcff.png"
+      },
+      {
+        "url": "https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_67a5de9c5a_2e0396c3e577e59c.png",
+        "file": "assets/img/gen-67a5de9c5a-2e0396c3e577e59c-4ec9bace.png"
+      },
+      {
+        "url": "https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_17281a40e9_07b7e724bd3b4753.png",
+        "file": "assets/img/gen-17281a40e9-07b7e724bd3b4753-5dc50e85.png"
+      },
+      {
+        "url": "https://www.transparenttextures.com/patterns/water.png",
+        "file": "assets/img/water-texture-local.svg"
+      },
+      {
+        "url": "https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_2e442e4f3f_b1127a7ea5d7eee7.png",
+        "file": "assets/img/gen-2e442e4f3f-b1127a7ea5d7eee7-c5169580.png"
+      },
+      {
+        "url": "https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_17281a40e9_2ce3ce7320ae1400.png",
+        "file": "assets/img/gen-17281a40e9-2ce3ce7320ae1400-81174f8e.png"
+      },
+      {
+        "url": "https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_5db4a6d8f0_8c178c9ad56ca649.png",
+        "file": "assets/img/gen-5db4a6d8f0-8c178c9ad56ca649-13218520.png"
+      },
+      {
+        "url": "https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_30bb9bc446_88ef0d6de3b4fdfa.png",
+        "file": "assets/img/gen-30bb9bc446-88ef0d6de3b4fdfa-dcbbcf93.png"
+      }
+    ],
+    "css": [
+      "assets/css/tailwind.css",
+      "assets/css/fonts.css",
+      "assets/css/fontawesome.min.css",
+      "assets/css/style.css"
+    ],
+    "js": [
+      "assets/js/main.js"
+    ],
+    "favicon": "assets/favicon/favicon.svg"
+  },
+  "warnings": [
+    {
+      "url": "https://www.transparenttextures.com/patterns/water.png",
+      "warning": "Remote texture returned 404, created a local SVG fallback."
+    }
+  ]
+}

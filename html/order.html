@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Замовлення води — SvitVody</title>
+    <link rel="icon" href="assets/favicon/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/css/tailwind.css">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/main.js" defer></script>
+</head>
+<body  class="antialiased min-h-screen flex items-center justify-center p-6 bg-cover bg-center relative page-order">
+<!-- Overlay for background blur effect -->
+    <div class="absolute inset-0 bg-brand-blue/30 backdrop-blur-sm"></div>
+
+    <!-- Modal Container -->
+    <div class="order-panel relative z-10 w-full max-w-5xl bg-white rounded-[40px] overflow-hidden flex flex-col md:flex-row custom-shadow">
+
+        <!-- Form Section (Left) -->
+        <div class="order-form-section flex-[1.5] bg-brand-formblue p-8 md:p-12">
+            <h2 class="text-3xl font-black text-brand-navy mb-8 uppercase tracking-tight">Швидке замовлення</h2>
+
+            <form id="orderForm" class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Name -->
+                    <div class="space-y-2">
+                        <label class="block text-sm font-bold text-brand-navy">Ваше ім'я*</label>
+                        <input type="text" placeholder="Як ми можемо до Вас звертатися" class="w-full bg-white rounded-xl px-5 py-4 text-sm text-brand-navy placeholder:text-gray-400">
+                    </div>
+                    <!-- Address -->
+                    <div class="space-y-2">
+                        <label class="block text-sm font-bold text-brand-navy">Адреса доставки*</label>
+                        <input type="text" placeholder="Вулиця, будинок, квартира" class="w-full bg-white rounded-xl px-5 py-4 text-sm text-brand-navy placeholder:text-gray-400">
+                    </div>
+                    <!-- Phone -->
+                    <div class="space-y-2">
+                        <label class="block text-sm font-bold text-brand-navy">Номер телефону*</label>
+                        <input type="tel" placeholder="+38 (___) ___-__-__" class="w-full bg-white rounded-xl px-5 py-4 text-sm text-brand-navy">
+                    </div>
+                    <!-- Date -->
+                    <div class="space-y-2">
+                        <label class="block text-sm font-bold text-brand-navy">Виберіть дату доставки*</label>
+                        <input type="date" class="w-full bg-white rounded-xl px-5 py-4 text-sm text-brand-navy">
+                    </div>
+                    <!-- Quantity & Price -->
+                    <div class="space-y-2">
+                        <label class="block text-sm font-bold text-brand-navy">Кількість бутлів*</label>
+                        <div class="relative">
+                            <select id="quantity" class="w-full bg-white rounded-xl px-5 py-4 text-sm text-brand-navy appearance-none cursor-pointer">
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="10">10</option>
+                                <option value="12">12+</option>
+                            </select>
+                            <i class="fa-solid fa-chevron-down absolute right-5 top-1/2 -translate-y-1/2 text-brand-blue pointer-events-none"></i>
+                        </div>
+                        <!-- Dynamic Price Info -->
+                        <div class="mt-2 flex items-center gap-2">
+                            <span class="text-[10px] font-bold uppercase tracking-widest text-brand-navy opacity-60">Ціна за бутель:</span>
+                            <span id="priceDisplay" class="text-lg font-black text-brand-navy">180 ₴</span>
+                        </div>
+                    </div>
+                    <!-- Time -->
+                    <div class="space-y-4">
+                        <label class="block text-sm font-bold text-brand-navy">Вкажіть зручний час для доставки води?*</label>
+                        <div class="flex gap-6">
+                            <label class="flex items-center gap-3 cursor-pointer group">
+                                <input type="radio" name="time" value="morning" class="hidden peer">
+                                <div class="w-5 h-5 rounded-full border-2 border-white bg-transparent peer-checked:bg-brand-navy peer-checked:border-brand-navy transition-all"></div>
+                                <span class="text-sm font-bold text-brand-navy">До обіду</span>
+                            </label>
+                            <label class="flex items-center gap-3 cursor-pointer group">
+                                <input type="radio" name="time" value="afternoon" class="hidden peer">
+                                <div class="w-5 h-5 rounded-full border-2 border-white bg-transparent peer-checked:bg-brand-navy peer-checked:border-brand-navy transition-all"></div>
+                                <span class="text-sm font-bold text-brand-navy">Після обіду</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Message -->
+                <div class="space-y-2">
+                    <label class="block text-sm font-bold text-brand-navy">Ваше повідомлення (не обов'язково)</label>
+                    <textarea rows="4" class="w-full bg-white rounded-2xl px-5 py-4 text-sm text-brand-navy placeholder:text-gray-400 resize-none"></textarea>
+                </div>
+
+                <!-- Submit -->
+                <button type="submit" class="bg-brand-navy text-white px-12 py-4 rounded-xl font-bold uppercase tracking-widest text-sm hover:bg-blue-900 transition-all shadow-xl active:scale-95">
+                    Замовити
+                </button>
+            </form>
+        </div>
+
+        <!-- Contacts Section (Right) -->
+        <div class="order-contact-section flex-1 bg-white p-8 md:p-12 flex flex-col justify-between">
+            <div>
+                <div class="flex items-center gap-3 mb-10">
+                    <div class="w-10 h-10 bg-brand-lightblue rounded-xl flex items-center justify-center text-brand-blue">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-navy">Контакти</h3>
+                </div>
+
+                <div class="space-y-8">
+                    <!-- Phone -->
+                    <div>
+                        <p class="text-[9px] uppercase font-bold tracking-widest text-gray-400 mb-1">Зателефонуйте нам</p>
+                        <a href="tel:+380671234567" class="text-2xl font-black text-brand-blue hover:text-brand-orange transition-colors tracking-tight">+380 (67) 123 45 67</a>
+                        <!-- Compact Work Hours -->
+                        <div class="mt-2 flex items-center gap-3 text-[11px] font-bold text-brand-blue/50 uppercase tracking-wider">
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-clock text-brand-orange"></i> Пн-Пт: 08-20</span>
+                            <span class="w-1 h-1 bg-brand-line rounded-full"></span>
+                            <span>Сб-Нд: 09-18</span>
+                        </div>
+                    </div>
+
+                    <!-- Messengers -->
+                    <div>
+                        <p class="text-[9px] uppercase font-bold tracking-widest text-gray-400 mb-3">Месенджери</p>
+                        <div class="flex gap-3">
+                            <a href="#" class="flex-1 flex items-center justify-center gap-2 py-3 bg-brand-navy/5 rounded-xl hover:bg-[#0088cc] hover:text-white transition-all group">
+                                <i class="fa-brands fa-telegram text-lg text-[#0088cc] group-hover:text-white"></i>
+                                <span class="font-bold text-[10px] uppercase tracking-widest">Telegram</span>
+                            </a>
+                            <a href="#" class="flex-1 flex items-center justify-center gap-2 py-3 bg-brand-navy/5 rounded-xl hover:bg-[#7360f2] hover:text-white transition-all group">
+                                <i class="fa-brands fa-viber text-lg text-[#7360f2] group-hover:text-white"></i>
+                                <span class="font-bold text-[10px] uppercase tracking-widest">Viber</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Notice -->
+            <div class="mt-auto">
+                <div class="p-4 bg-brand-lightblue rounded-2xl border border-brand-line mb-6">
+                    <p class="text-[11px] leading-relaxed text-brand-blue font-medium italic">
+                        * Доставка здійснюється безкоштовно при замовленні від 2-ох бутлів.
+                    </p>
+                </div>
+                <a href="index.html" class="block text-center text-[10px] font-bold text-gray-400 hover:text-brand-blue transition-colors uppercase tracking-[0.2em]">На головну</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
