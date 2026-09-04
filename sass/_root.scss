@@ -1,0 +1,64 @@
+@use "mixins" as *;
+
+:root {
+  --greenb: #72A66D; // green brand
+  --gopreenb: #d3e6d1; // green brand opacity 20%
+  --lgray: #f4f4f4; // light grey
+  --blueb: #6EA9DB; // Blue brand
+  --colors: #16303D; // Colors
+  --o8colors: #16303DCC; // Colors opacity 80
+  --o6colors: rgba(22, 48, 61, 0.6); // Colors opacity 60
+  --dcolors: #191E22; // Color
+  --bg1: #E6F4E4; // Colors
+  --body: #455964; // body text
+  --green: #527a4f; // Colors
+  --lgreen: #EBF6EA; // light green
+  --borders: #DDDFDE; // Borders
+  --dgreen: #3A5737; // dark green
+  --ngreen: #71a66c; // Colors
+  --ltgreen: #71A66C33; // Colors
+  --dark: #1A1A1A; // Dark
+  --grey: #D8D2C9; // Colors
+  --color1: #73838B; // Colors
+  --orange: #F48E40; // Colors
+  --red: #f5627c; // Colors
+
+
+
+
+
+  //--blue: #16303d;
+  //--lblue: #6EA9DB;
+  //
+  //--bg1: #E6F4E4;
+  --yellow: #FEA500;
+  //--black: #040810;
+  //--green: #527a4f;
+  //--white: #ffffff;
+  //--greenWhite: #71a66c99;
+  //--whiteGreenBg: #71a66c;
+  //--whiteBlue: #436e8f;
+}
+
+body {
+  .container {
+    --bs-gutter-x: 7rem;
+    @include max-width(xl) {
+      --bs-gutter-x: 1.6rem;
+    }
+  }
+  .container-fluid {
+    max-width: 1440px;
+    --bs-gutter-x: 3rem;
+    @include max-width(xxl) {
+      --bs-gutter-x: 1.6rem;
+    }
+  }
+  .row {
+    --bs-gutter-y: 0;
+    --bs-gutter-x: 1.6rem;
+    @include max-width(xxl) {
+      --bs-gutter-x: 0.8rem;
+    }
+  }
+}

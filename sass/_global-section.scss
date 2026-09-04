@@ -1,0 +1,28 @@
+body {
+
+
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.site-shell {
+  min-height: 100vh;
+}
+
+.site-header,
+.site-footer {
+  padding: 24px;
+}
+
+#swup {
+  padding: 24px;
+}
+
+.transition-fade {
+  transition: opacity 0.3s ease;
+  opacity: 1;
+}
+
+html.is-animating .transition-fade {
+  opacity: 0;
+}

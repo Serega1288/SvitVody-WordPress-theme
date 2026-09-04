@@ -1,0 +1,42 @@
+// підключаємо стандартний модуль карт
+@use 'sass:map';
+
+// підключаємо свою карту брейкпоінтів
+@use 'breakpoints' as bp;
+
+// ────────────────────────────────────────────
+// Міксин “максимальна ширина”
+
+@mixin max-width($size) {
+  // було: $value: map-get(bp.$breakpoints-down, $size);
+  $value: map.get(bp.$breakpoints-down, $size);
+
+  @media (max-width: $value) {
+    @content;
+  }
+}
+
+// Міксин “мінімальна ширина”
+@mixin min-width($size) {
+  $value: map.get(bp.$breakpoints-up, $size);
+
+  @media (min-width: $value) {
+    @content;
+  }
+}
+
+
+// @include media-between(sm, lg) { … }
+// → @media (min-width: 576px) and (max-width: 991px) { … }
+//@mixin media-between($from, $to) {
+//  $min: map-get($breakpoints-up, $from);
+//  $max: map-get($breakpoints-down, $to);
+//
+//  @if $min and $max {
+//    @media (min-width: $min) and (max-width: $max) {
+//      @content;
+//    }
+//  } @else {
+//    @warn "Unknown breakpoint(s): #{$from}, #{$to}";
+//  }
+//}
