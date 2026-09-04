@@ -1,0 +1,28 @@
+{
+  "name": "project-theme",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "init": "node scripts/init.js",
+    "build": "sass --load-path project-theme/sass project-theme/sass:project-theme/assets/css --style=compressed",
+    "dev": "npm-run-all --parallel sass sync",
+    "sass": "sass --load-path project-theme/sass --watch project-theme/sass:project-theme/assets/css --style=compressed",
+    "sync": "browser-sync start --proxy http://localhost:8080 --files \"project-theme/assets/css/*.css,project-theme/**/*.php,project-theme/**/*.js,plugins-local/**/*.php,plugins-local/**/*.js,plugins-local/**/*.css\" --no-open",
+    "wp:up": "docker compose up -d --build",
+    "wp:down": "docker compose down",
+    "wp:purge": "powershell -NoProfile -Command \"$confirm = Read-Host 'Видалити контейнери, томи та локальні image цього проєкту? Введи так'; if ($confirm -ne 'так') { Write-Host 'Скасовано.'; exit 1 }; docker compose down -v --remove-orphans --rmi local\"",
+    "wp:logs": "docker compose logs -f",
+    "db:export": "powershell -NoProfile -Command \"New-Item -ItemType Directory -Force database | Out-Null; docker compose exec -T db sh -lc 'mysqldump --default-character-set=utf8mb4 -u root -proot wordpress > /tmp/wordpress.sql'; docker compose cp db:/tmp/wordpress.sql database/wordpress.sql; docker compose exec -T db rm -f /tmp/wordpress.sql\"",
+    "db:import": "powershell -NoProfile -Command \"docker compose cp database/wordpress.sql db:/tmp/wordpress.sql; docker compose exec -T db sh -lc 'mysql --default-character-set=utf8mb4 -u root -proot wordpress < /tmp/wordpress.sql'; docker compose exec -T db rm -f /tmp/wordpress.sql\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Root build tooling for a reusable WordPress starter theme running in Docker.",
+  "devDependencies": {
+    "browser-sync": "^3.0.4",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.89.1"
+  }
+}

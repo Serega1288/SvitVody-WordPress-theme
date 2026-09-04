@@ -1,0 +1,70 @@
+// hortiqa: main.scss
+
+// 1. Змінні
+@use 'fonts';
+@use 'root';
+
+// 2. сітка
+@use 'cols';
+
+// 3. global
+@use 'helpers';
+@use 'global-section';
+
+
+// 4. Базові стилі
+//@use 'base/reset';
+//@use 'base/helpers';
+//@use 'base/typography';
+//@use 'base/fancybox';
+//@use 'base/icon';
+//@use 'base/form';
+//@use 'base/button';
+//@use 'base/stars';
+//@use 'base/woo-pagination';
+
+
+// 6. section
+//@use 'sections/header';
+//@use 'sections/footer';
+//@use 'sections/posts';
+//@use 'sections/related-articles';
+//@use 'sections/page-seo-text-scroll';
+//@use 'sections/portfolio';
+//@use 'sections/page-slider-mini';
+//@use 'sections/page-tabs-accordion';
+//@use 'sections/product-table';
+//@use 'sections/block-shortcode';
+
+// 5. woo product
+//@use 'components/woo';
+
+
+// . Конструктор
+//@use 'template/main';
+//@use 'template/constructor'; //page-constructor
+//@use 'template/product'; //page-constructor
+//@use 'template/cart';
+//@use 'template/account';
+//@use 'template/login-reg';
+//@use 'template/checkout';
+
+//@use 'template/single-image'; //single-image
+//@use 'template/defaut-page';
+//@use 'template/cart-checkout-order';
+//@use 'template/wrap-account';
+//@use 'template/product-single';
+
+// . Блог
+//@use 'template/blog';
+
+
+
+//@use 'components/footer';
+
+// 6. Сторінки (якщо потрібно)
+// @use 'pages/homepage';
+// @use 'pages/shop';
+
+
+

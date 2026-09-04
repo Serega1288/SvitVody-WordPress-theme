@@ -1,0 +1,18 @@
+{
+  "composeProjectName": "svitvody",
+  "siteName": "SvitVody",
+  "themeName": "Project Theme",
+  "themeTextDomain": "project-theme",
+  "themeVersion": "0.1.0",
+  "themeAuthor": "Sergii Tomusyak",
+  "themeAuthorUri": "https://github.com/Serega1288",
+  "themeUri": "https://github.com/Serega1288/SvitVody-WordPress-theme.git",
+  "themeDescription": "Svit Vody WordPress theme.",
+  "themeRequiresAtLeast": "6.0",
+  "packageName": "project-theme",
+  "packageVersion": "1.0.0",
+  "packageDescription": "Root build tooling for a reusable WordPress starter theme running in Docker.",
+  "wordpressPort": "8080",
+  "adminerPort": "8081",
+  "autoPlugins": "cyr2lat,debug-log-viewer,disable-gutenberg,disable-comments,all-in-one-wp-migration,woocommerce"
+}

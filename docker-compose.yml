@@ -1,0 +1,109 @@
+services:
+  db:
+    image: mysql:8.0
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress
+      MYSQL_ROOT_PASSWORD: root
+      TZ: Europe/Kiev
+    command:
+      - --default-authentication-plugin=mysql_native_password
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_520_ci
+      - --skip-character-set-client-handshake
+      - --init-connect=SET NAMES utf8mb4 COLLATE utf8mb4_unicode_520_ci
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./docker/mysql/my.cnf:/etc/mysql/conf.d/charset.cnf:ro
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-proot"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  wordpress:
+    build:
+      context: .
+      dockerfile: docker/php/Dockerfile
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: unless-stopped
+    ports:
+      - "${WORDPRESS_PORT:-8080}:80"
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_NAME: wordpress
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: wordpress
+      WORDPRESS_DEBUG: 1
+      WORDPRESS_CONFIG_EXTRA: |
+        if (!defined('DB_CHARSET')) define('DB_CHARSET', 'utf8mb4');
+        if (!defined('DB_COLLATE')) define('DB_COLLATE', 'utf8mb4_unicode_520_ci');
+        define('FS_METHOD', 'direct');
+        define('WP_MEMORY_LIMIT', '256M');
+      TZ: Europe/Kiev
+    volumes:
+      - wordpress_data:/var/www/html
+      - ./project-theme:/var/www/html/wp-content/themes/project-theme
+      - ./plugins-local:/var/www/local-plugins-live
+      - ./docker/wp/wordpress-entrypoint.sh:/usr/local/bin/wordpress-entrypoint.sh:ro
+      - ./docker/wp/fix-permissions.sh:/usr/local/bin/fix-permissions.sh:ro
+      - ./docker/wp/sync-local-plugins.sh:/usr/local/bin/sync-local-plugins.sh:ro
+    entrypoint: ["/bin/sh", "/usr/local/bin/wordpress-entrypoint.sh"]
+
+  adminer:
+    image: adminer:latest
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: unless-stopped
+    ports:
+      - "${ADMINER_PORT:-8081}:8080"
+    environment:
+      ADMINER_DEFAULT_SERVER: db
+      TZ: Europe/Kiev
+
+  wpcli:
+    image: wordpress:cli-php8.2
+    user: "0:0"
+    depends_on:
+      db:
+        condition: service_healthy
+      wordpress:
+        condition: service_started
+    restart: on-failure
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_NAME: wordpress
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: wordpress
+      WP_AUTO_PLUGINS: ${WP_AUTO_PLUGINS:-}
+      TZ: Europe/Kiev
+    volumes:
+      - wordpress_data:/var/www/html
+      - ./project-theme:/var/www/html/wp-content/themes/project-theme
+      - ./plugins-archives:/var/www/local-plugins
+      - ./plugins-local:/var/www/local-plugins-live
+      - ./docker/wp/install-plugins.sh:/usr/local/bin/install-plugins.sh:ro
+      - ./docker/wp/sync-local-plugins.sh:/usr/local/bin/sync-local-plugins.sh:ro
+    entrypoint: ["/bin/sh", "/usr/local/bin/install-plugins.sh"]
+
+  plugins-sync:
+    image: wordpress:cli-php8.2
+    user: "0:0"
+    depends_on:
+      wordpress:
+        condition: service_started
+    restart: unless-stopped
+    volumes:
+      - wordpress_data:/var/www/html
+      - ./plugins-local:/var/www/local-plugins-live
+      - ./docker/wp/sync-local-plugins.sh:/usr/local/bin/sync-local-plugins.sh:ro
+    entrypoint: ["/bin/sh", "/usr/local/bin/sync-local-plugins.sh", "--watch"]
+
+volumes:
+  db_data:
+  wordpress_data:
