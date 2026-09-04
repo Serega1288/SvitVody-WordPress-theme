@@ -1,6 +1,6 @@
 <?php
 /**
- * Main theme template.
+ * Main theme template..
  *
  * @package ProjectTheme
  */
