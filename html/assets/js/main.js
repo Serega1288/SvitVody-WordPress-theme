@@ -662,15 +662,6 @@
     header.classList.toggle('scrolled', window.scrollY > 50);
   };
 
-  const revealSections = () => {
-    document.querySelectorAll('.reveal').forEach((element) => {
-      const revealTop = element.getBoundingClientRect().top;
-      if (revealTop < window.innerHeight - 150) {
-        element.classList.add('active');
-      }
-    });
-  };
-
   document.addEventListener('click', (event) => {
     if (event.target.closest('[data-mobile-contacts-toggle]')) {
       const layer = document.querySelector('.mobile-contact-layer');
@@ -813,13 +804,11 @@
   window.addEventListener('scroll', () => {
     updateHeader();
     updateFloatingActions();
-    revealSections();
   });
 
   window.addEventListener('load', () => {
     updateHeader();
     updateFloatingActions();
-    revealSections();
     updatePrice();
   });
 

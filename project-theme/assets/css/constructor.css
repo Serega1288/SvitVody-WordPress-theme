@@ -1,0 +1,9 @@
+.constructor-copy > * + * {
+    margin-top: 1em;
+}
+
+.constructor h1,
+.constructor h2,
+.constructor h3 {
+    overflow-wrap: break-word;
+}

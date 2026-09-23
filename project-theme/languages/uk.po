@@ -1,0 +1,613 @@
+# Copyright (C) 2026 Sergii Tomusyak
+# This file is distributed under the same license as the Project Theme theme.
+msgid ""
+msgstr ""
+"Project-Id-Version: Project Theme 0.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/project-theme\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-09-05T12:15:01+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: project-theme\n"
+
+#. Theme Name of the theme
+#: style.css
+msgid "Project Theme"
+msgstr "Project Theme"
+
+#. Theme URI of the theme
+#: style.css
+msgid "https://github.com/Serega1288/svitvody-WordPress-theme.git"
+msgstr "https://github.com/Serega1288/svitvody-WordPress-theme.git"
+
+#. Description of the theme
+#: style.css
+msgid "Svit Vody WordPress theme."
+msgstr "Svit Vody WordPress theme."
+
+#. Author of the theme
+#: style.css
+msgid "Sergii Tomusyak"
+msgstr "Sergii Tomusyak"
+
+#. Author URI of the theme
+#: style.css
+msgid "https://github.com/Serega1288"
+msgstr "https://github.com/Serega1288"
+
+#: header.php:42
+msgid "Світ Води, головна"
+msgstr "Світ Води, головна"
+
+#: inc/enqueue.php:68
+msgid "Головна"
+msgstr "Головна"
+
+#: inc/enqueue.php:69
+msgid "Про воду"
+msgstr "Про воду"
+
+#: inc/enqueue.php:70
+msgid "Для дому"
+msgstr "Для дому"
+
+#: inc/enqueue.php:71
+msgid "Для офісу"
+msgstr "Для офісу"
+
+#: inc/enqueue.php:72
+msgid "Вартість"
+msgstr "Вартість"
+
+#: inc/enqueue.php:73
+msgid "Мова сайту"
+msgstr "Мова сайту"
+
+#: inc/enqueue.php:74
+msgid "SvitVody, головна"
+msgstr "SvitVody, головна"
+
+#: inc/enqueue.php:75
+msgid "Відкрити контакти"
+msgstr "Відкрити контакти"
+
+#: inc/enqueue.php:76
+msgid "Відкрити меню"
+msgstr "Відкрити меню"
+
+#: inc/enqueue.php:77
+msgid "Контакти"
+msgstr "Контакти"
+
+#: inc/enqueue.php:78
+msgid "Закрити контакти"
+msgstr "Закрити контакти"
+
+#: inc/enqueue.php:79
+msgid "Меню сайту"
+msgstr "Меню сайту"
+
+#: inc/enqueue.php:80
+msgid "Закрити меню"
+msgstr "Закрити меню"
+
+#: inc/enqueue.php:81
+msgid "Або оформіть замовлення нижче"
+msgstr "Або оформіть замовлення нижче"
+
+#: inc/enqueue.php:82
+msgid "Оформлення замовлення"
+msgstr "Оформлення замовлення"
+
+#: inc/enqueue.php:83
+msgid "Ваше ім'я*"
+msgstr "Ваше ім'я*"
+
+#: inc/enqueue.php:84
+msgid "Як ми можемо до Вас звертатися"
+msgstr "Як ми можемо до Вас звертатися"
+
+#: inc/enqueue.php:85
+msgid "Адреса доставки*"
+msgstr "Адреса доставки*"
+
+#: inc/enqueue.php:86
+msgid "Вулиця, будинок, квартира"
+msgstr "Вулиця, будинок, квартира"
+
+#: inc/enqueue.php:87
+msgid "Номер телефону*"
+msgstr "Номер телефону*"
+
+#: inc/enqueue.php:88
+msgid "Дата доставки*"
+msgstr "Дата доставки*"
+
+#: inc/enqueue.php:89
+msgid "Ваше повідомлення"
+msgstr "Ваше повідомлення"
+
+#: inc/enqueue.php:90
+msgid "Додаткова інформація до замовлення"
+msgstr "Додаткова інформація до замовлення"
+
+#: inc/enqueue.php:91
+msgid "Замовити"
+msgstr "Замовити"
+
+#: inc/enqueue.php:92
+msgid "Мінікошик"
+msgstr "Мінікошик"
+
+#: inc/enqueue.php:93
+msgid "Ваше замовлення"
+msgstr "Ваше замовлення"
+
+#: inc/enqueue.php:94
+msgid "Додати воду"
+msgstr "Додати воду"
+
+#: inc/enqueue.php:95
+msgid "Супутні товари"
+msgstr "Супутні товари"
+
+#: inc/enqueue.php:96
+msgid "Додати"
+msgstr "Додати"
+
+#: inc/enqueue.php:97
+msgid "Додано"
+msgstr "Додано"
+
+#: inc/enqueue.php:98
+msgid "Разом"
+msgstr "Разом"
+
+#: inc/enqueue.php:99
+msgid "Доставка безкоштовна при замовленні від 2-ох бутлів."
+msgstr "Доставка безкоштовна при замовленні від 2-ох бутлів."
+
+#: inc/enqueue.php:100
+msgid "Відкрити кошик"
+msgstr "Відкрити кошик"
+
+#: inc/enqueue.php:101
+msgid "Повернутися нагору"
+msgstr "Повернутися нагору"
+
+#: inc/enqueue.php:102
+msgid "бутель"
+msgstr "бутель"
+
+#: inc/enqueue.php:103
+msgid "бутлі"
+msgstr "бутлі"
+
+#: inc/enqueue.php:104
+#: inc/products.php:99
+msgid "бутлів"
+msgstr "бутлів"
+
+#: inc/enqueue.php:105
+msgid "у замовленні"
+msgstr "у замовленні"
+
+#: inc/enqueue.php:106
+#: inc/products.php:90
+msgid "шт."
+msgstr "шт."
+
+#: inc/enqueue.php:107
+msgid "Зменшити кількість"
+msgstr "Зменшити кількість"
+
+#: inc/enqueue.php:108
+#: inc/orders.php:188
+msgid "Кількість"
+msgstr "Кількість"
+
+#: inc/enqueue.php:109
+msgid "Збільшити кількість"
+msgstr "Збільшити кількість"
+
+#: inc/enqueue.php:110
+msgid "Прибрати товар"
+msgstr "Прибрати товар"
+
+#: inc/enqueue.php:111
+msgid "Додайте воду або товари, і вони з'являться тут."
+msgstr "Додайте воду або товари, і вони з'являться тут."
+
+#: inc/enqueue.php:112
+#: inc/orders.php:38
+msgid "Додайте товари до кошика."
+msgstr "Додайте товари до кошика."
+
+#: inc/enqueue.php:113
+msgid "Надсилаємо заявку…"
+msgstr "Надсилаємо заявку…"
+
+#: inc/enqueue.php:114
+#: inc/orders.php:141
+msgid "Оновіть сторінку перед надсиланням заявки."
+msgstr "Оновіть сторінку перед надсиланням заявки."
+
+#: inc/enqueue.php:115
+msgid "Не вдалося надіслати заявку. Спробуйте ще раз."
+msgstr "Не вдалося надіслати заявку. Спробуйте ще раз."
+
+#. translators: %s: saved order ID.
+#: inc/enqueue.php:117
+#, php-format
+msgid "Дякуємо! Заявку №%s збережено. Наш менеджер зв’яжеться з Вами."
+msgstr "Дякуємо! Заявку №%s збережено. Наш менеджер зв’яжеться з Вами."
+
+#: inc/enqueue.php:118
+msgid "Заявку прийнято!"
+msgstr "Заявку прийнято!"
+
+#: inc/enqueue.php:119
+msgid "Вікно автоматично закриється через 8 секунд."
+msgstr "Вікно автоматично закриється через 8 секунд."
+
+#: inc/enqueue.php:120
+msgid "Немає підтвердження від сервера. Дані збережені у формі. Повторіть надсилання."
+msgstr "Немає підтвердження від сервера. Дані збережені у формі. Повторіть надсилання."
+
+#: inc/order-notifications.php:24
+msgid "Збережено. Порожнє поле залишить значення без змін."
+msgstr "Збережено. Порожнє поле залишить значення без змін."
+
+#: inc/order-notifications.php:24
+msgid "Введіть секретний ключ або пароль"
+msgstr "Введіть секретний ключ або пароль"
+
+#: inc/order-notifications.php:49
+msgid "Перевірте формат токена Telegram-бота."
+msgstr "Перевірте формат токена Telegram-бота."
+
+#: inc/order-notifications.php:56
+msgid "Вкажіть Chat ID групи, наприклад -100…, або її публічне @ім’я."
+msgstr "Вкажіть Chat ID групи, наприклад -100…, або її публічне @ім’я."
+
+#: inc/order-notifications.php:63
+msgid "грн"
+msgstr "грн"
+
+#: inc/order-notifications.php:70
+msgid "ТЕСТ TELEGRAM — НЕ ВИКОНУВАТИ. Заявка #"
+msgstr "ТЕСТ TELEGRAM — НЕ ВИКОНУВАТИ. Заявка #"
+
+#: inc/order-notifications.php:70
+#: inc/order-notifications.php:91
+msgid "Нова заявка #"
+msgstr "Нова заявка #"
+
+#: inc/order-notifications.php:70
+#: inc/orders.php:192
+msgid "Разом:"
+msgstr "Разом:"
+
+#: inc/order-notifications.php:71
+#: inc/orders.php:182
+msgid "Ім’я"
+msgstr "Ім’я"
+
+#: inc/order-notifications.php:71
+#: inc/orders.php:182
+msgid "Телефон"
+msgstr "Телефон"
+
+#: inc/order-notifications.php:71
+#: inc/orders.php:182
+msgid "Адреса"
+msgstr "Адреса"
+
+#: inc/order-notifications.php:71
+#: inc/orders.php:182
+msgid "Дата доставки"
+msgstr "Дата доставки"
+
+#: inc/order-notifications.php:74
+msgid "Мова:"
+msgstr "Мова:"
+
+#: inc/order-notifications.php:74
+msgid "Товари:"
+msgstr "Товари:"
+
+#: inc/order-notifications.php:76
+msgid "од.;"
+msgstr "од.;"
+
+#: inc/order-notifications.php:78
+msgid "Повідомлення:"
+msgstr "Повідомлення:"
+
+#: inc/order-notifications.php:90
+msgid "Не вказана коректна пошта одержувача."
+msgstr "Не вказана коректна пошта одержувача."
+
+#: inc/order-notifications.php:92
+msgid "Поштовий транспорт прийняв лист. Це не підтверджує доставку до скриньки."
+msgstr "Поштовий транспорт прийняв лист. Це не підтверджує доставку до скриньки."
+
+#: inc/order-notifications.php:93
+msgid "Поштовий транспорт відхилив лист. Перевірте SMTP."
+msgstr "Поштовий транспорт відхилив лист. Перевірте SMTP."
+
+#: inc/order-notifications.php:98
+msgid "Заповніть токен бота й Chat ID у налаштуваннях."
+msgstr "Заповніть токен бота й Chat ID у налаштуваннях."
+
+#: inc/order-notifications.php:106
+msgid "Перейти до замовлення"
+msgstr "Перейти до замовлення"
+
+#: inc/order-notifications.php:115
+msgid "Немає підтвердження Telegram. Перевірте групу перед повтором."
+msgstr "Немає підтвердження Telegram. Перевірте групу перед повтором."
+
+#: inc/order-notifications.php:118
+msgid "Telegram підтвердив надсилання."
+msgstr "Telegram підтвердив надсилання."
+
+#: inc/order-notifications.php:119
+msgid "Telegram не прийняв токен бота (HTTP 401). Оновіть токен у налаштуваннях."
+msgstr "Telegram не прийняв токен бота (HTTP 401). Оновіть токен у налаштуваннях."
+
+#: inc/order-notifications.php:120
+msgid "Telegram заборонив надсилання (HTTP 403). Перевірте участь і права бота у групі."
+msgstr "Telegram заборонив надсилання (HTTP 403). Перевірте участь і права бота у групі."
+
+#. translators: %d: Telegram HTTP status code.
+#: inc/order-notifications.php:122
+#, php-format
+msgid "Telegram: HTTP %d. Перевірте налаштування та дозвіл бота писати у групу."
+msgstr "Telegram: HTTP %d. Перевірте налаштування та дозвіл бота писати у групу."
+
+#: inc/order-notifications.php:160
+msgid "Надсилання почалося; підтвердження ще немає."
+msgstr "Надсилання почалося; підтвердження ще немає."
+
+#: inc/order-notifications.php:163
+msgid "Внутрішня помилка доставки. Перевірте канал перед повтором."
+msgstr "Внутрішня помилка доставки. Перевірте канал перед повтором."
+
+#: inc/order-notifications.php:177
+msgid "Сповіщення"
+msgstr "Сповіщення"
+
+#: inc/order-notifications.php:179
+msgid "У черзі"
+msgstr "У черзі"
+
+#: inc/order-notifications.php:179
+msgid "Вимкнено"
+msgstr "Вимкнено"
+
+#: inc/order-notifications.php:179
+msgid "Надіслано"
+msgstr "Надіслано"
+
+#: inc/order-notifications.php:179
+msgid "Прийнято поштовим транспортом"
+msgstr "Прийнято поштовим транспортом"
+
+#: inc/order-notifications.php:179
+msgid "Помилка"
+msgstr "Помилка"
+
+#: inc/order-notifications.php:179
+msgid "Потребує перевірки"
+msgstr "Потребує перевірки"
+
+#: inc/order-notifications.php:185
+msgid "Для непідтвердженого надсилання спочатку перевірте скриньку або групу, щоб уникнути дубля."
+msgstr "Для непідтвердженого надсилання спочатку перевірте скриньку або групу, щоб уникнути дубля."
+
+#: inc/order-notifications.php:187
+msgid "Повторити ненадіслані"
+msgstr "Повторити ненадіслані"
+
+#: inc/order-notifications.php:192
+msgid "Недостатньо прав."
+msgstr "Недостатньо прав."
+
+#: inc/order-notifications.php:195
+msgid "Заявка недоступна."
+msgstr "Заявка недоступна."
+
+#: inc/order-notifications.php:197
+msgid "Сповіщення ще надсилається. Повторіть пізніше."
+msgstr "Сповіщення ще надсилається. Повторіть пізніше."
+
+#: inc/orders.php:5
+msgid "Заявки"
+msgstr "Заявки"
+
+#: inc/orders.php:5
+#: inc/orders.php:117
+#: inc/orders.php:165
+#: inc/orders.php:181
+msgid "Заявка"
+msgstr "Заявка"
+
+#: inc/orders.php:5
+msgid "Переглянути заявку"
+msgstr "Переглянути заявку"
+
+#: inc/orders.php:46
+msgid "Товар недоступний. Оновіть сторінку та перевірте кошик."
+msgstr "Товар недоступний. Оновіть сторінку та перевірте кошик."
+
+#: inc/orders.php:51
+msgid "Некоректна кількість товару."
+msgstr "Некоректна кількість товару."
+
+#: inc/orders.php:63
+msgid "Перевірте мінімальну кількість і доступність ціни товару."
+msgstr "Перевірте мінімальну кількість і доступність ціни товару."
+
+#: inc/orders.php:65
+msgid "Товари повинні мати одну валюту."
+msgstr "Товари повинні мати одну валюту."
+
+#: inc/orders.php:81
+msgid "Невідома мова замовлення."
+msgstr "Невідома мова замовлення."
+
+#: inc/orders.php:83
+msgid "Невірний ідентифікатор запиту."
+msgstr "Невірний ідентифікатор запиту."
+
+#: inc/orders.php:88
+msgid "Перевірте заповнення контактів та доставки."
+msgstr "Перевірте заповнення контактів та доставки."
+
+#: inc/orders.php:91
+msgid "Заповніть обов’язкові поля."
+msgstr "Заповніть обов’язкові поля."
+
+#: inc/orders.php:94
+msgid "Вкажіть коректний номер телефону."
+msgstr "Вкажіть коректний номер телефону."
+
+#: inc/orders.php:97
+msgid "Перевірте дату доставки."
+msgstr "Перевірте дату доставки."
+
+#: inc/orders.php:99
+msgid "Некоректний кошик."
+msgstr "Некоректний кошик."
+
+#: inc/orders.php:103
+msgid "Заявка ще обробляється. Спробуйте повторити надсилання."
+msgstr "Заявка ще обробляється. Спробуйте повторити надсилання."
+
+#: inc/orders.php:108
+msgid "Цей запит уже використано для іншого замовлення."
+msgstr "Цей запит уже використано для іншого замовлення."
+
+#: inc/orders.php:114
+msgid "Ціни змінилися. Оновіть сторінку та перевірте суму замовлення."
+msgstr "Ціни змінилися. Оновіть сторінку та перевірте суму замовлення."
+
+#: inc/orders.php:121
+msgid "Не вдалося зберегти заявку. Спробуйте ще раз."
+msgstr "Не вдалося зберегти заявку. Спробуйте ще раз."
+
+#: inc/orders.php:124
+msgid "Не вдалося зберегти дані заявки."
+msgstr "Не вдалося зберегти дані заявки."
+
+#: inc/orders.php:129
+#: inc/orders.php:130
+msgid "Не вдалося поставити сповіщення в чергу."
+msgstr "Не вдалося поставити сповіщення в чергу."
+
+#: inc/orders.php:144
+msgid "Завеликий запит."
+msgstr "Завеликий запит."
+
+#: inc/orders.php:146
+msgid "Некоректний запит."
+msgstr "Некоректний запит."
+
+#: inc/orders.php:151
+msgid "Забагато спроб. Спробуйте пізніше."
+msgstr "Забагато спроб. Спробуйте пізніше."
+
+#: inc/orders.php:161
+#: inc/orders.php:173
+msgid "Нова"
+msgstr "Нова"
+
+#: inc/orders.php:161
+msgid "В обробці"
+msgstr "В обробці"
+
+#: inc/orders.php:161
+msgid "Виконана"
+msgstr "Виконана"
+
+#: inc/orders.php:161
+msgid "Скасована"
+msgstr "Скасована"
+
+#: inc/orders.php:165
+msgid "Клієнт"
+msgstr "Клієнт"
+
+#: inc/orders.php:165
+#: inc/orders.php:188
+msgid "Сума"
+msgstr "Сума"
+
+#: inc/orders.php:165
+msgid "Доставка"
+msgstr "Доставка"
+
+#: inc/orders.php:165
+msgid "Стан"
+msgstr "Стан"
+
+#: inc/orders.php:165
+msgid "Створено"
+msgstr "Створено"
+
+#: inc/orders.php:177
+msgid "Дані заявки та склад замовлення"
+msgstr "Дані заявки та склад замовлення"
+
+#: inc/orders.php:182
+msgid "Повідомлення"
+msgstr "Повідомлення"
+
+#: inc/orders.php:187
+msgid "Мова"
+msgstr "Мова"
+
+#: inc/orders.php:188
+msgid "Товари"
+msgstr "Товари"
+
+#: inc/orders.php:188
+msgid "Товар"
+msgstr "Товар"
+
+#: inc/orders.php:188
+msgid "Рівень від"
+msgstr "Рівень від"
+
+#: inc/orders.php:188
+msgid "Ціна за одиницю"
+msgstr "Ціна за одиницю"
+
+#: inc/orders.php:194
+msgid "Стан заявки"
+msgstr "Стан заявки"
+
+#: inc/products.php:77
+msgid "Кількості мають бути різними цілими числами від 1 до 99."
+msgstr "Кількості мають бути різними цілими числами від 1 до 99."
+
+#: inc/theme-admin.php:23
+msgid "Header mobile menu"
+msgstr "Header mobile menu"
+
+#: inc/theme-admin.php:24
+msgid "Header desktop menu"
+msgstr "Header desktop menu"
+
+#: inc/theme-admin.php:25
+msgid "Footer menu 1"
+msgstr "Footer menu 1"
+
+#. Template Name of the theme
+msgid "Constructor"
+msgstr "Constructor"

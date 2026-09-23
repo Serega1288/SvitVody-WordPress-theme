@@ -109,17 +109,6 @@ header.scrolled .logo-text {
   font-size: 1.25rem;
 }
 
-.reveal {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: all 0.8s ease-out;
-}
-
-.reveal.active {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 .blue-gradient-bg {
   background: linear-gradient(180deg, #0088CC 0%, #0066CC 100%);
   position: relative;

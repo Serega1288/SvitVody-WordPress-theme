@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 252 78" role="img" aria-labelledby="title desc">
+  <title id="title">Світ Води</title>
+  <desc id="desc">Логотип Світ Води, доставка здоров'я</desc>
+  <path fill="#FFFFFF" d="M31.4 0S0 36.8 0 57.8C0 69 9.5 78 21.2 78s21.2-9 21.2-20.2C42.4 36.8 31.4 0 31.4 0Zm-10.2 68.7c-6.8 0-12.3-5.3-12.3-11.9 0-8 8.4-22.2 16.4-33.6 2.1 11.9 8.2 20.9 8.2 33.6 0 6.6-5.5 11.9-12.3 11.9Z"/>
+  <text x="56" y="37" fill="#FFFFFF" font-family="Montserrat, Arial, sans-serif" font-size="30" font-weight="900" letter-spacing="0">СВІТ ВОДИ</text>
+  <text x="56" y="60" fill="#FFFFFF" opacity="0.45" font-family="Montserrat, Arial, sans-serif" font-size="12.5" font-weight="800" font-style="italic" textLength="166" lengthAdjust="spacingAndGlyphs">ДОСТАВКА ЗДОРОВ'Я</text>
+</svg>
