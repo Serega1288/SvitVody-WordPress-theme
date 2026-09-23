@@ -1,32 +1,17 @@
 <?php
 /**
- * Main theme template..
+ * Fallback template for content without an assigned page template.
  *
  * @package ProjectTheme
  */
-
 get_header();
 ?>
 <main id="swup" class="transition-fade" role="main">
-    <?php if (have_posts()) : ?>
-        <?php while (have_posts()) : the_post(); ?>
-            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                <header class="entry-header">
-                    <?php the_title('<h1 class="entry-title">', '</h1>'); ?>
-                </header>
-
-                <p>!!!!!!! test !!!!!!!! 222</p>
-
-                <div class="entry-content">
-                    <?php the_content(); ?>
-                </div>
-            </article>
-        <?php endwhile; ?>
-    <?php else : ?>
-        <section class="no-results">
-                <h1><?php esc_html_e('No content found.', 'project-theme'); ?></h1>
-        </section>
-    <?php endif; ?>
+    <?php while (have_posts()) : the_post(); ?>
+        <article <?php post_class('max-w-screen-xl mx-auto px-6 py-24'); ?>>
+            <h1 class="text-4xl font-bold mb-8"><?php the_title(); ?></h1>
+            <?php the_content(); ?>
+        </article>
+    <?php endwhile; ?>
 </main>
-<?php
-get_footer();
+<?php get_footer(); ?>
