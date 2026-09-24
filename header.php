@@ -31,10 +31,25 @@ $order_popup_options         = array(
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="<?php echo esc_url(get_template_directory_uri()); ?>/assets/favicon/favicon.svg" type="image/svg+xml">
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NK5RTQZ9');</script>
+    <!-- End Google Tag Manager -->
+
     <?php wp_head(); ?>
 </head>
 <body <?php body_class('antialiased page-home'); ?>>
 <?php wp_body_open(); ?>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NK5RTQZ9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
 <!-- Header -->
     <header id="main-header" class="sticky top-0 z-[100] w-full px-6 py-4 md:px-16 bg-white border-b border-brand-line transition-all duration-300">
         <div class="site-header-inner w-full mx-auto flex items-center justify-between">
