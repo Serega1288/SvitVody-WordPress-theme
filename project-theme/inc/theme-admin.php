@@ -181,6 +181,8 @@ function lux_dev_mode_head_assets() {
         body:not(.mod-dev-on) #toplevel_page_spotlight-instagram,
         body:not(.mod-dev-on) #toplevel_page_wpcf7,
         body:not(.mod-dev-on) #toplevel_page_wpclever,
+        body:not(.mod-dev-on) #toplevel_page_deployer-for-git,
+        body:not(.mod-dev-on) #toplevel_page_easy-wp-smtp,
         body:not(.mod-dev-on) #menu-settings,
         body:not(.mod-dev-on) #menu-posts,
         body:not(.mod-dev-on) #menu-comments,
