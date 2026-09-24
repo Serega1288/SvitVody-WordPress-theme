@@ -5,6 +5,7 @@ function hortiqa_theme_setup() : void {
         'project-theme',
         get_template_directory() . '/languages'
     );
+    add_theme_support( 'title-tag' );
     add_theme_support( 'woocommerce' );
 }
 
